@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <title>SportLife - Главная</title>  
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="nutrition.html">Питание</a>
+            <a href="sports.html">Виды спорта</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <img src="hero-bg.jpg" alt="Спортивный образ жизни">
+            <h1>Начни свой путь к здоровью сегодня</h1>
+            <p>Каждый маленький шаг - это прогресс. Не сравнивай себя с другими, сравнивай себя с собой вчерашним.</p>
+        </section>
+        
+        <section class="about">
+            <img src="about.jpg" alt="О нас">
+            <p>Спорт - это не только физическая активность, это образ мышления. Присоединяйся к нашему сообществу!</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Мой Telegram: <a href="https://t.me/borshevikas">@borshevikas</a></p>
+    </footer>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/serviceworker.js')
+      .then(() => console.log('Service Worker зарегистрирован'))
+      .catch((err) => console.error('Ошибка:', err));
+  }
+</script>
+</body>
+</html>
